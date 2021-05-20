@@ -1,5 +1,14 @@
 ## User List Page
 
+- The page user sees initially
+### Header
+- Light gray background
+- Blue "+New User" button
+  - Aligned to left of the screen with padding
+  - When clicked, redirects the user to the Add User page
+- Has a checkbox with "Hide Disabled User" label to the right of the New User button
+  - When checked, users that have *false* on "Enabled" column are not displayed
+  - Checked by default
 ### Content
 - Table with filter/sort options
   - 4 columns filling the width of the screen
@@ -7,25 +16,16 @@
   - Sorted by ID column by default
   - Rows get highlighted in light blue when hovered over
 
-### Header
-- Light gray background
-- Blue "New User" button with plus sign
-  - Aligned to left of the screen with padding
-  - Clicking it redirects the user to the Add User page.
-- Has a checkbox with "Hide Disabled User" label to the right of the New User button
-  - Checked by default
-  - When checked, users that have *false* on "Enabled" column are not displayed
-
 ## Add User Page
 
 ### Content
 - "New User" heading with light gray background
-- Submit Form
-  - Has input fields with the labels "Username", "Display Name", "Phone", "Email"
-  - Has a combobox with "User Roles" label below
+- Submit Form below the heading
+  - Contains input fields with the labels "Username", "Display Name", "Phone", "Email"
+  - Contains a combobox with "User Roles" label below
     - "Guest", "Admin", and "SuperAdmin" options
     - "Select User Roles" placeholder
-  - Has checkbox with "Enabled" label (default: Not checked)
+  - Contains a checkbox with "Enabled" label (default: Not checked)
   - The labels are aligned to left with padding
   - The input fields are aligned to right with padding, and have the same width
 
@@ -34,5 +34,5 @@
 - "Save User" button
   - To submit the data of the form in the content section
   - Aligned to right of the screen with padding
-  - Button is Disabled with a lighter blue color until all the required fields of the form are filled
-  - Once enabled, clicking it submits the form to add the new user entry, and redirects to the User List page
+  - Button is Disabled with a lighter blue color until the required fields of the form are filled
+  - Once enabled, the button can be clicked to submit the form, creating the new user entry, and redirecting to the User List page
